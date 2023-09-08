@@ -1,0 +1,11 @@
+<div class="spotify-top-nav flex justify-between items-center w-full h-20 bg-[#0f0f0f] mr-5">
+    <div class="focus-titile">Focus</div>
+    <div class="bg-white rounded-full px-4 max-w-[300px] flex-auto flex items-center border border-white" *ngIf="isSearchVissible">
+        <input class="px-4 py-2 border-0 outline-none w-full bg-transparent" placeholder="Search..." type="search"> 
+    </div>
+    <div class="auth text-white flex mr-10 gap-3">
+        <button type="button" class="btn rounded-3xl font-bold text-gray-400 text-lg px-7">Sign Up</button>
+        <button type="button" class="btn btn-light bg-white font-bold text-lg rounded-3xl px-7 hover:text-green-500"
+            (click)="navigateToLogin()">Log in</button>
+    </div>
+</div>

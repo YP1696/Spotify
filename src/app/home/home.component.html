@@ -1,0 +1,25 @@
+<div class="spotify_Home-container row over">
+    <div class="spotify-sideBar flex flex-col justify-start items-center col-2 bg-black h-[100vh]">
+        <div class="spotify-sidebar-item m-3 w-36">
+            <img src="assets/Spotify_Logo_RGB_White.png" alt="spotify Logo">
+        </div>
+        <div class="spotify-sidebar-item m-3 w-36">
+            <a href="">Home</a>
+        </div>
+        <div class="spotify-sidebar-item m-3 w-36" (click)="navigateToSearch()">
+            <a href="">Search</a>
+        </div>
+        <div class="spotify-sidebar-item m-3 w-36">
+            <a href="">Your Liabrary</a>
+        </div>
+        <div class="spotify-sidebar-item m-3 w-36">
+            <a href="">Create Playlist</a>
+        </div>
+    </div>
+    <div class="spotify-playlist col-10 bg-[#191919] h-[100vh]">
+        <app-top-nav></app-top-nav>
+        <div class="spotify-song mt-5 mx-1">
+            <app-song-card [title]="'Peaceful Song'" [description]="'Relax and Peaceful songs'"></app-song-card>
+        </div>
+    </div>
+</div>
